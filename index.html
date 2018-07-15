@@ -9,41 +9,172 @@
     <link rel="stylesheet" href="css/skeleton/css/normalize.css">
     <link rel="stylesheet" href="css/skeleton/css/skeleton.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
 
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
+    
 </head>
 
 <body>
 <!-- .container is main centered wrapper -->
 <div class="container">
-
+    
     <!-- columns should be the immediate child of a .row -->
-    <div class="row">
-        <div class="one column">One</div>
-        <div class="eleven columns">Eleven</div>
-    </div>
+    <section id = "section1">
+        <div class="row">
+            <div class="two columns logo" style="background: red">
+                <img src="assets/logo.jpg" alt="Logo"/>
+            </div>
+            <div class="nine columns heading">
+                <h1>Website Name Make Sure it's Long</h1>
+            </div>
+        </div>
+        <div class="row">
+            <a href="#">Home</a> |
+            <a class="prodlink" href="#">Products</a> |
+            <a class="prodlink1" href="#">Contact</a>
+        </div>
+        <div class="row">
+            <div class="container" id="container">
+                <ul>
+                    <li>
+                        <img src="img/carousal/image1.jpg" alt="image 1" />
+                    </li>
+                    <li>
+                        <img src="img/carousal/image2.jpg" alt="image 2" />
+                    </li>
+                    <li>
+                        <img src="img/carousal/image3.jpg" alt="image 3" />
+                    </li>
+                    <li>
+                        <img src="img/carousal/image4.jpg" alt="image 4" />
+                    </li>
+                    <li>
+                        <img src="img/carousal/image5.jpg" alt="image 5" />
+                    </li>
+                    <li>
+                        <img src="img/carousal/image6.jpg" alt="image 6" />
+                    </li>
+                    <li>
+                        <img src="img/carousal/image7.jpg" alt="image 7" />
+                    </li>
+                    <img src="img/left.png" class="left">
+                    <img src="img/right.png" class="right">
+                </ul>
+            </div>
+        </div>
+    </section>
 
-    <!-- just use a number and class 'column' or 'columns' -->
-    <div class="row">
-        <div class="two columns">Two</div>
-        <div class="ten columns">Ten</div>
-    </div>
+    <section id = "section2">
+        <div class="row">
+            <div class="four columns">
+                <h3 class="prod_title">Italian Pizza</h3>
+                <a href="#"><img src="assets/italian-pizza.jpg" alt="italian-pizza"/></a>
+                <p class="prod_descripton">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Sed eget erat mauris. Pellentesque vulputate lorem sed magna feugiat rutrum.
+                    Suspendisse laoreet ex et rhoncus scelerisque. 
+                    Cras eleifend ipsum eget venenatis ornare. 
+                    Phasellus eleifend est massa, id facilisis orci rutrum non.
+                </p>
+            </div>
+            <div class="four columns">
+                <h3 class="prod_title">Baked Fish</h3>
+                <img src="assets/baked-fish.jpeg" alt="baked fish with salad"/>
+                <p class="prod_descripton">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Sed eget erat mauris. Pellentesque vulputate lorem sed magna feugiat rutrum.
+                    Suspendisse laoreet ex et rhoncus scelerisque. 
+                    Cras eleifend ipsum eget venenatis ornare. 
+                    Phasellus eleifend est massa, id facilisis orci rutrum non.
+                </p>
+            </div>
+            <div class="four columns">
+                <h3 class="prod_title">Pancakes</h3>
+                <img src="assets/pancake.jpeg" alt="pancake"/>
+                <p class="prod_descripton">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Sed eget erat mauris. Pellentesque vulputate lorem sed magna feugiat rutrum.
+                    Suspendisse laoreet ex et rhoncus scelerisque. 
+                    Cras eleifend ipsum eget venenatis ornare. 
+                    Phasellus eleifend est massa, id facilisis orci rutrum non.
+                </p>
+            </div>
+        </div>
+    </section>
 
-    <!-- there are a few shorthand columns widths as well -->
-    <div class="row">
-        <div class="one-third column">1/3</div>
-        <div class="two-thirds column">2/3</div>
-    </div>
-    <div class="row">
-        <div class="one-half column">1/2</div>
-        <div class="one-half column">1/2</div>
-    </div>
-
+    <section id="section3">
+        <div class="row">
+            <form>
+                <div class="four columns">
+                    <label for="exampleEmailInput">Your email</label>
+                    <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+                    <label for="exampleRecipientInput">Reason for contacting</label>
+                    <select class="u-full-width" id="exampleRecipientInput">
+                        <option value="Option 1">Questions</option>
+                        <option value="Option 2">Admiration</option>
+                        <option value="Option 3">Complains</option>
+                    </select>
+                    <label for="exampleMessage">Message</label>
+                    <textarea class="u-full-width" placeholder="Hi …" id="exampleMessage"></textarea>
+                    <label class="example-send-yourself-copy">
+                        <input type="checkbox">
+                        <span class="label-body">Send a copy to yourself</span>
+                    </label>
+                    <input class="button-primary" type="submit" value="Submit">
+                </div>
+            </form>
+        <div class="six columns">
+            <address>
+                <a href="mailto:webmaster@example.com">Eget Venenatis</a>.<br>
+                Visit us at:<br>
+                Example.com<br>
+                Box 564, Wellington<br>
+                New Zealand
+            </address>
+            <p>Call customer service at <a href="tel:+13235798328p22">323-579-8328 ext. 25</a>
+            <div class="social media">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <a href="www.facebook.com" class="fa fa-facebook"></a>
+                <a href="www.twitter.com" class="fa fa-twitter"></a>
+            </div>
+        </div>
+    </section>
 </div>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/jquery.waypoints.min.js"></script>
+<script src="js/Carousel.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('.container').carousel({
+            num: 5,
+            maxWidth: 450,
+            maxHeight: 300,
+            distance: 50,
+            scale: 0.6,
+            animationTime: 1000,
+            showTime: 4000
+        });
+
+    });
+
+    $(document).ready(function (){
+            $(".prodlink").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#section2").offset().top
+                }, 2000);
+            });
+        });
+        $(document).ready(function (){
+            $(".prodlink1").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#section3").offset().top
+                }, 2000);
+            });
+        });
+    </script>
 <script src="js/script.js"></script>
 </body>
 </html>

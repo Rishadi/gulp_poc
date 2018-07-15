@@ -1,3 +1,47 @@
-body {
-    background-color: #cccccc;
+.container {
+    width: 100%;
+    max-width: 100%;
+    #section1, #section2, #section3{
+        margin-top: 100px;
+    }
+    #section1 {
+        margin: 20px 0px 50px 0px;
+        .logo img {
+            width: 100%;
+        }
+        .heading {
+            border-bottom: 1px solid green;
+        }
+    }
+    #section2 {
+        background: #F8F8F8;
+        img {
+            width: 70%;
+        }
+        .four{
+            border: 1px solid #E8E8E8;
+            padding:2px;
+            text-align: center;
+        }
+    }
+    #section3 {
+        background: #505050;
+    }
+    form{
+        padding: 10px;
+        color: #E8E8E8;
+    }
+    #exampleRecipientInput{
+        color:#505050;
+    }
+    .six{
+        float: right;
+        padding-left: 10px;
+    }
+    .social{
+        a{
+            padding: 5px;
+            text-decoration: none;
+        }
+    }
 }
